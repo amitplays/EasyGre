@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/dialogu_bg"
+    android:layout_margin="5dip"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="A federal statute that contributed to the crisis was the expiration of section 936 of the U.S. Internal Revenue Code, which applied to Puerto Rico. This section was critical for the economy of the island as it established tax exemptions for U.S. corporations that settled in Puerto Rico and allowed its subsidiaries operating in the island to send their earnings to the parent corporation at any time, without paying federal tax on corporate income."
+        android:id="@+id/txt"
+        android:textColor="@color/sub_btn_ripple"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="san-serif-thin" />
+</RelativeLayout>

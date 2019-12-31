@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/dialogu_bg"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:textColor="#fff"
+        android:padding="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:fontFamily="san-serif-thin"
+        android:editable="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:padding="10dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="italic"
+        android:fontFamily="san-serif-thin"
+        android:textSize="25sp" />
+
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/google"
+        android:background="@drawable/sear"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="5dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/google"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space7" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/sh"
+        android:id="@+id/share2"
+        android:layout_marginRight="55dp"
+        android:layout_alignTop="@+id/google"
+        android:layout_alignEnd="@+id/textView3" />
+
+</RelativeLayout>

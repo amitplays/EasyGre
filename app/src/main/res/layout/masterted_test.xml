@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/as"
+    android:layout_height="match_parent">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space9" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Word"
+        android:id="@+id/ques1"
+        android:textColor="#fff"
+        android:textSize="42sp"
+        android:fontFamily="san-serif-thin"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/space9"
+        android:layout_centerHorizontal="true" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/ques1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/option1"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:visibility="gone"
+
+        android:textStyle="italic"
+
+        android:textIsSelectable="true"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/space10"
+        android:layout_alignParentStart="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Show meaning"
+        android:id="@+id/showmeanng"
+        android:background="@drawable/dialogu_bg"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/sear"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="Next Word"
+        android:background="@drawable/dialogu_bg"
+        android:id="@+id/nextword"
+        android:textColor="#fff"
+        android:padding="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/mastered"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textSize="18dp" />
+
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/sear"
+        android:id="@+id/sear"
+        android:layout_below="@+id/option1"
+        android:layout_alignEnd="@+id/showmeanng"
+        android:visibility="invisible"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp" />
+
+    <RadioButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/mastered"
+        android:padding="10dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:textColor="@color/colorPrimaryDark"
+        android:shadowColor="@color/gray"
+        android:buttonTint="#fff"
+        android:layout_below="@+id/option1"
+        android:layout_alignStart="@+id/nextword"
+        android:visibility="invisible"
+        android:checked="false"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>

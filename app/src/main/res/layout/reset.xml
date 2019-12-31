@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/round3"
+    android:alpha="0.91"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mastered WordList Over !"
+        android:id="@+id/textView9"
+        android:drawableStart="@drawable/warning"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_margin="10dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random Test"
+        android:id="@+id/b3"
+        android:layout_marginRight="5dp"
+
+        android:background="@drawable/round"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="san-serif-thin" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="WordList"
+        android:id="@+id/b4"
+        android:background="@drawable/round"
+        android:layout_marginLeft="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/reset"
+        android:layout_alignEnd="@+id/textView9"
+        android:fontFamily="san-serif-thin" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:background="@drawable/round"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/b3"
+        android:layout_alignStart="@+id/textView9"
+        android:fontFamily="san-serif-thin" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/b4"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space16" />
+
+</RelativeLayout>

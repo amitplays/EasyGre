@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#80250D0B"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/word"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:fontFamily="san-serif-thin"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="2dp"
+        android:textSize="27sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/meaning"
+        android:gravity="center_vertical"
+        android:textColor="#cbffff"
+        android:fontFamily="san-serif-thin"
+        android:textStyle="italic"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="25sp"
+        android:layout_marginLeft="18dp"
+        android:layout_below="@+id/word"
+        android:layout_alignParentEnd="true" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/meaning"
+        android:layout_alignEnd="@+id/meaning" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/favword"
+        android:layout_alignBottom="@+id/word"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp" />
+</RelativeLayout>

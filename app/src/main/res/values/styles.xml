@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#231306</item>
+        <item name="colorPrimaryDark">#0C0402</item>
+        <item name="colorAccent">#0C0402</item>
+
+
+    </style>
+
+    <style name="animationdialog">
+        <item name="@android:windowEnterAnimation">@anim/dialog_in</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+    <style name="animationdialogright">
+        <item name="@android:windowEnterAnimation">@anim/right_dialog_in</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_out</item>
+    </style>
+
+</resources>
+

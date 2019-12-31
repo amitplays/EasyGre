@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/as"
+    android:padding="2dp">
+
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/space" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/space"
+        android:layout_alignParentStart="true"
+        android:id="@+id/space2"
+        android:layout_marginBottom="35dp" />
+
+    <Space
+        android:layout_width="40dp"
+        android:layout_height="fill_parent"
+        android:layout_alignTop="@+id/space2"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space3"
+        android:layout_marginBottom="35dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:background="@drawable/round"
+        android:id="@+id/randomtest"
+        android:layout_alignTop="@+id/space2"
+        android:text="Random Test"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:fontFamily="san-serif-thin"
+        android:layout_alignStart="@+id/mst"
+        android:layout_alignEnd="@+id/mst"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/mst"
+        android:text="Mastered Test"
+        android:textColor="#fff"
+        android:background="@drawable/round"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25sp"
+        android:fontFamily="san-serif-thin"
+        android:layout_below="@+id/space4"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_alignEnd="@+id/imageButton4"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:id="@+id/imageButton4"
+        android:background="@drawable/round"
+        android:text="Alphabetic Test"
+        android:textColor="#fff"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="25sp"
+        android:longClickable="false"
+        android:layout_below="@+id/space5"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="san-serif-thin"
+        android:textStyle="bold" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/randomtest"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/space4" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:id="@+id/space5"
+        android:layout_below="@+id/mst"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="fill_parent"
+        android:layout_height="39dp"
+        android:id="@+id/space6"
+        android:layout_below="@+id/imageButton4"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/qm"
+        android:id="@+id/button7"
+        android:padding="6dp"
+        android:layout_marginRight="14dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>
+
+
