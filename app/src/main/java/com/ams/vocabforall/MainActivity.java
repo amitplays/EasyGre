@@ -64,9 +64,9 @@ public class MainActivity extends Activity {
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
                 // set the custom dialog components - text and button
-                Button dialogButton = (Button) dialog.findViewById(R.id.dialogButtonOK);
+                Button dialogButton = dialog.findViewById(R.id.dialogButtonOK);
 
-                TextView head = (TextView)dialog.findViewById(R.id.textView5);
+                TextView head = dialog.findViewById(R.id.textView5);
                 Typeface font = Typeface.createFromAsset(getAssets(), "fonts/test.ttf");
 
                 head.setTypeface(font);

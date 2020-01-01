@@ -26,11 +26,10 @@ import java.util.ArrayList;
 public class ListOfMeanings extends Activity {
 
     ListView wordlist;
-    TextView head;
+    TextView head,Dword;
     ArrayList<CharWordListUtil> WordMeaning;
     DataBaseHelper mydb;
     RadioButton Dfav;
-    TextView Dword;
     String word,key;
     int Mflag, a= 0;
 
@@ -45,7 +44,7 @@ public class ListOfMeanings extends Activity {
         Intent intent = getIntent();
         key = intent.getExtras().getString("keyWord");
         head.setText(key.toUpperCase());
-        Button how = (Button)findViewById(R.id.button3);
+        Button how = findViewById(R.id.button3);
         //      **** Animation******
 //        final Animation bottom2top = AnimationUtils.loadAnimation(this, R.anim.bottom_to_top);
 //        wordlist.startAnimation(bottom2top);
@@ -127,29 +126,21 @@ public class ListOfMeanings extends Activity {
                 Dfav.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-
                         if (Mflag == 0) {
                             Toast.makeText(ListOfMeanings.this, "" + word + " is added to your Mastered List ", Toast.LENGTH_SHORT).show();
                             Dfav.setChecked(true);
                             Mflag = 1;
                             mydb.UpdateMastered(word, 1);
                             getdata();
-
                         } else {
-
                             Toast.makeText(ListOfMeanings.this, "" + word + " is removed from your Mastered List ", Toast.LENGTH_SHORT).show();
                             Mflag = 0;
                             mydb.UpdateMastered(word, 0);
                             Dfav.setChecked(false);
                             getdata();
-
                         }
-
-
                     }
                 });
-
-
             }
         });
 
@@ -170,32 +161,23 @@ public class ListOfMeanings extends Activity {
                 Typeface font = Typeface.createFromAsset(getAssets(), "fonts/test.ttf");
                 text.setTypeface(font);
                 dialog.show();
-
-
             }
         });
-
-
     }
-
 
     public void getdata() {
         WordMeaning = new ArrayList<>();
        Cursor words = mydb.getmeaning(key);
         if (words.getCount() == 0) {
-
             Toast.makeText(ListOfMeanings.this, "No Words with letter : " + key, Toast.LENGTH_SHORT).show();
-
             return;
         }
         while (words.moveToNext()) {
-
             CharWordListUtil per2 = new CharWordListUtil();
             per2.setWord(words.getString(1));           // this is word
             per2.setMeaning(words.getString(0));        // this is meaning
             per2.setMastered(words.getInt(2));
-                       WordMeaning.add(per2);
-
+            WordMeaning.add(per2);
             AdapterCharWord adapter2 = new AdapterCharWord(ListOfMeanings.this, WordMeaning);
             wordlist.setAdapter(adapter2);
         }
